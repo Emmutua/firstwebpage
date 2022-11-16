@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src="./dekut.png" alt="nav bar" width="100%" height="100px">
+    <title>List of courses</title>
+</head>
+<body>
+   <u><h1>List of courses</h1></u> 
+    <ol type = "1">
+            <li><h2>School of computer Science and IT</h2></li>
+            <ol type="A">
+                    <li>BSc Computer Scince</li>
+                    <li>Bsc it</li>
+                    <li>BBIT</li>
+            </ol>
+            <li><h2>School of Engeneering</h2></li>
+            <ol type="i">
+                    <li>EEE</li>
+                    <li>TIE</li>
+                    <li>Mechanical</li>
+            </ol>
+            <li><h2>School of Scince</h2></li>
+            <ul type="circle">
+                    <li>Acturial Science</li>
+                    <li>Industiral Chem</li>
+            </ul>
+            <li><h2>School of Business</h2></li>
+            <dl>
+                    <dt>BCOM</dt>
+                    <dd>Bachelor of commerce</dd>
+                    <dt>BBA</dt>
+                    <dd>Business administration</dd>
+            </dl>
+    </ol>
+
+    <h3>Apply here</h3>
+    <form action="">
+        <label for="fname">Names: <input type="text" name="flname" id="flname" placeholder="full name"></label> <br> <br>
+        <label for="email">Email Andress: <input type="email" name="email" id="email"></label> <br>
+
+        <label for="gender"> Gender:</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="gender">
+        <label for="gender">Female</label> <br><br>
+
+        <label for="age">Age: </label>
+        <select name="age" id="age">
+            <option value="U18">Under 18</option>
+            <option value="U30" selected>Under 30</option>
+            <option value="U60">Under 60</option>
+            <option value="O60">Over 60</option>
+        </select> <br> <br>
+
+        <label for="comments"> <h5>Comments:</h5>
+            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+        </label> <br>
+    <hr/>
+        <button onclick="validate()">Submit Application</button>
+       
+    </form>
+    <script>
+        function validate(){
+       var name = document.getElementById('flname').value;
+       var email = document.getElementById('email').value;
+       var gender = document.getElementById('gender').value;
+
+       alert("Name: " + name + "Email: " + email + gender);
+        }
+    </script>
+</body>
+</html>

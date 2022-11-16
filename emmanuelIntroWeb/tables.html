@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in html</title>
+    <style>
+      th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .tables{
+        display: flex;
+        flex-direction: row;
+      }
+      .tableData{
+        margin: 50px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <h1>Dedan kimathi student data</h1>
+    <div class="tables">
+        <div class="tableData">
+    <h1>Course</h1>
+    <table style="height: 400px;width: 500px; border-collapse: collapse;">
+        <tr>
+            <th rowspan="3">Name</th>
+            <th>data</th>
+            <th>data</th>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr> 
+         <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </table>
+</div>
+    <div class="tableData">
+    <h1>Student</h1>
+    <table style="height: 400px;width: 500px; border-collapse: collapse;">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Regno</th>
+        </tr>
+        <tr>
+            <td>Emma</td>
+            <td>Mutua</td>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <td>Joy</td>
+            <td>Love</td>
+            <td>1235</td>
+        </tr>
+        <tr>
+            <td>Patience</td>
+            <td>Zawadi</td>
+            <td>3434</td>
+        </tr> 
+         <tr>
+            <td>Theuru</td>
+            <td>Knaau</td>
+            <td>8888</td>
+        </tr>
+    </table>
+</div>
+    <div class="tableData">
+    <h1>Lectures</h1>
+    <table style="height: 400px;width: 500px; border-collapse: collapse;">
+        <tr>
+            <th colspan="3">data</th>
+        </tr>
+        <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">data</td>
+            <td>data</td>
+        </tr>
+        <tr>
+            <td>data</td>
+        </tr> 
+         <tr>
+            <td>data</td>
+            <td>data</td>
+            <td>data</td>
+        </tr>
+    </table>
+</div>
+</div>
+<h3>List of courses</h3>
+    <ul type = "disk">
+        <li>Mechanical</li>
+        <li>Electrical</li>
+        <li>IGGRES</li>
+    </ul>
+    <h3>List of students</h3>
+    <ul type = "square">
+        <li>Emmanuel</li>
+        <li>Mulwa</li>
+        <li>Mutua</li>
+    </ul>
+    <dl>
+          <dt>Dr Emmanuel</dt>
+          <dd>- Web application lead</dd>
+          <dt>Dr Mututa</dt>
+          <dd>- Spring boot and Microservices lead</dd>
+        </dl>
+</body>
+</html>
